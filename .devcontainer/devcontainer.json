@@ -1,0 +1,33 @@
+{
+    "name": "KC3 Docker Home Server",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "node",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "moby": true,
+            "azureDnsAutoDetection": true,
+            "installDockerBuildx": true,
+            "installDockerComposeSwitch": true,
+            "version": "latest",
+            "dockerDashComposeVersion": "latest"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "latest"
+        },
+        "ghcr.io/audacioustux/devcontainers/taskfile:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "shardulm94.trailing-spaces",
+                "redhat.vscode-yaml",
+                "usernamehw.errorlens",
+                "streetsidesoftware.code-spell-checker",
+                "taichi.vscode-textlint",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    }
+}
