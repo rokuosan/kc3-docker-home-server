@@ -34,3 +34,17 @@ Share images, automate workflows, and more with a free Docker ID:
 For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
+
+## コマンド解説
+
+今回は Docker でコンテナを動作させるために`docker run` コマンドを利用しました。（このコマンドは実はエイリアスで、本当のコマンドは`docker container run` です。）
+
+このコマンドは以下のような文法になっています。括弧で囲われた部分については省略できます。
+
+```bash
+docker container run [オプション] イメージ名 [コマンド] [引数]
+```
+
+今回の例を当てはめると、`--rm` がオプションとなり、`hello-world:latest` がイメージ名になります。
+
+この`--rm` オプションは、実行終了後にコンテナを削除するコマンドです。この`hello-world` イメージのコンテナは使用後に再度利用することがないので実行後に削除しています。
