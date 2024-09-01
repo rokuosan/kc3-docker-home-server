@@ -12,6 +12,8 @@ docker run --rm -p 8080:80 nginx:latest
 ```
 
 このコマンドが実行されている間に、任意のブラウザから`http://localhost:8080` にアクセスしてみてください。
+（VSCode で devcontainer を利用している場合は右下に通知が来るので Open in browser を選択してください。）
+
 うまく Web サーバーが起動していれば「Welcome to nginx!」と表示されます。
 
 これで Docker を使って Web サーバーをホスティングできました。
