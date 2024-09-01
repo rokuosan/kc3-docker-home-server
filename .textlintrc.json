@@ -1,0 +1,23 @@
+{
+    "plugins": {},
+    "filters": {},
+    "rules": {
+        "preset-ja-technical-writing": {
+            "no-exclamation-question-mark": false
+        },
+        "preset-ja-spacing": {
+            "ja-space-around-code": {
+                "before": false,
+                "after": true
+            },
+            "ja-no-space-around-parentheses": {
+                "before": false,
+                "after": false
+            },
+            "ja-space-between-half-and-full-width": {
+                "space": "always",
+                "exceptPunctuation": true
+            }
+        }
+    }
+}
