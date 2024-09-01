@@ -1,0 +1,9 @@
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ../03-nginx-custom/data:/usr/share/nginx/html
+      - ../03-nginx-custom/config:/etc/nginx/conf.d
+      - ../03-nginx-custom/secret/.htpasswd:/etc/nginx/.htpasswd
