@@ -3,6 +3,10 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "runArgs": [
+        "--name",
+        "kc3-docker-home-server"
+    ],
     "remoteUser": "node",
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
