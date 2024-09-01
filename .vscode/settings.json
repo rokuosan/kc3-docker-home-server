@@ -5,7 +5,8 @@
         "devcontainer",
         "devcontainers",
         "textlint",
-        "tmpfs"
+        "tmpfs",
+        "htpasswd"
     ],
     "cSpell.ignorePaths": [
         "package-lock.json",
