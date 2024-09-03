@@ -1,0 +1,26 @@
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    restart: always
+    depends_on:
+      - database
+    ports:
+      - "8080:8080"
+
+  database:
+    image: mysql:9.0.1
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: kc3_docker_home_server
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test_password
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "127.0.0.1"]
+      timeout: 20s
+      retries: 10
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+    expose:
+      - "3306"
