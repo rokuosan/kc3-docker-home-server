@@ -6,7 +6,10 @@
         "devcontainers",
         "textlint",
         "tmpfs",
-        "htpasswd"
+        "htpasswd",
+        "labstack",
+        "WORKDIR",
+        "gpasswd"
     ],
     "cSpell.ignorePaths": [
         "package-lock.json",
