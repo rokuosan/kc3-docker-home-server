@@ -26,3 +26,6 @@ go.work.sum
 
 **/secret/**
 !**/secret/.gitkeep
+
+06-minecraft/data/**
+!06-minecraft/data/.gitkeep
