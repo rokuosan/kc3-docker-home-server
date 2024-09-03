@@ -9,7 +9,8 @@
         "htpasswd",
         "labstack",
         "WORKDIR",
-        "gpasswd"
+        "gpasswd",
+        "itzg",
     ],
     "cSpell.ignorePaths": [
         "package-lock.json",
