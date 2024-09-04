@@ -21,4 +21,4 @@
 - [Step:03 Webサーバーをホストしてみよう・2](./03-nginx-custom/README.md)
 - [Step:04 Docker Compose を使ってみよう](./04-compose/README.md)
 - [Step:05 自作アプリケーションのデプロイをしてみよう](./05-dockerfile/README.md)
-- [Step:05 ゲームサーバーを立ててみよう](./06-minecraft/README.md)
+- [Step:06 ゲームサーバーを立ててみよう](./06-minecraft/README.md)
