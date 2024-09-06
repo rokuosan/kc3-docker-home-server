@@ -16,7 +16,7 @@ FROM python:3.11.2
 
 ARG UID=1000
 ARG USERNAME=admin
-RUN useradd -m -u ${UID} admin && gpasswd -a ${USERNAME} staff
+RUN useradd -m -u ${UID} ${admin} && gpasswd -a ${USERNAME} staff
 
 WORKDIR /usr/src/app
 
