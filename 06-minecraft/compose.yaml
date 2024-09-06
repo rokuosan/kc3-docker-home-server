@@ -14,6 +14,6 @@ services:
       MOTD: "Welcome to my Minecraft server!"
       ENABLE_RCON: "true"
       # 今回使用したイメージでは、以下のような環境変数でサーバーに利用されるJVMのオプションを変更することもできます。
-      # JVM_XX_OPTS: "-XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=50 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled"
+      # JVM_XX_OPTS: "-XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC"
     volumes:
       - ./data:/data
